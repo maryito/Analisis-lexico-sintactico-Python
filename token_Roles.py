@@ -1,4 +1,5 @@
 def getTokens():
+<<<<<<< HEAD
     tokens = (
 
     # Palabras Reservadas
@@ -53,3 +54,52 @@ def getTokens():
     'NUMBER_int',
 )
     return tokens
+=======
+	tokens = (
+		'SUMA',
+		'RESTA',
+		'MULT',
+		'DIV',
+		'MODULO',
+		'POTENCIA',
+		'PARIZQ',
+		'PARDER',
+		'CORIZQ',
+		'CORDER',
+		'LLAIZQ',
+		'LLADER',
+		'AND',
+		'OR',
+		'NOT',
+		'MENORQUE',
+		'MAYORQUE',
+		'MENORIGUAL',
+		'MAYORIGUAL',
+		'IGUAL',
+		'DISTINTO',
+		'SI',
+		'SINO',
+		'MIENTRAS',
+		'PARA',
+		'CONTINUAR',
+		'ROMPER',
+		'REGRESAR',
+		'ASIGNAR',
+		'COMA',
+		'PUNTOCOMA',
+		'DOSPUNTOS',
+		'CARACTER',
+		'ENTERO',
+		'VACIO',
+		'IDENTIFICADOR',
+		'NUMERO',
+		'CADENA_',
+		'IMPRIMIR',
+		'LEER',
+		'IMPORTAR',
+		'PUNTO',
+		'NUMERAL',
+		'MAIN',
+	)
+	return tokens
+>>>>>>> refs/remotes/origin/master

@@ -1,5 +1,4 @@
 import ply.lex as lex
-import os
 import token_Roles as tkRoles
 
 class Compilador(object):
@@ -146,8 +145,6 @@ class Compilador(object):
         r'//(.)*?\n'
         t.lexer.lineno += 1
 
-############################################################################################
-
     def t_error(self,t):
     	print(" No es valido el caracter '%s'"%t.value[0])
     	t.lexer.skip(1)
@@ -168,6 +165,4 @@ class Compilador(object):
 if __name__ == '__main__':
     m = Compilador()
     m.build()
-    while True:
-        a = input("Ingresa datos: ")
-        m.prueba(a)
+    m.prueba("3 + 10  %    8")
