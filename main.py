@@ -1,4 +1,5 @@
 import ply.lex as lex
+import os
 import token_Roles as tkRoles
 
 class Compilador(object):
@@ -7,25 +8,25 @@ class Compilador(object):
 
 # Reglas de Expresiones Regualres para token de Contexto simple
 
-    t_PLUS = r'\+'
-    t_MINUS = r'-'
+    t_SUMA = r'\+'
+    t_RESTA = r'-'
     t_MINUSMINUS = r'\-\-'
-    t_POINT = r'\.'
-    t_TIMES = r'\*'
-    t_DIVIDE = r'/'
-    t_EQUAL = r'='
-    t_LESS = r'<'
-    t_GREATER = r'>'
-    t_SEMICOLON = ';'
-    t_COMMA = r','
-    t_LPAREN = r'\('
-    t_RPAREN = r'\)'
-    t_LBRACKET = r'\['
-    t_RBRACKET = r'\]'
-    t_LBLOCK = r'{'
-    t_RBLOCK = r'}'
-    t_QUOTES = r'\"'
-
+    t_PUNTO = r'\.'
+    t_MULT = r'\*'
+    t_DIV = r'/'
+    t_ASIGNAR = r'='
+    t_MENORQUE = r'<'
+    t_MAYORQUE = r'>'
+    t_PUNTOCOMA = ';'
+    t_COMA = r','
+    t_PARIZQ = r'\('
+    t_PARDER = r'\)'
+    t_CORIZQ = r'\['
+    t_CORDER = r'\]'
+    t_LLAIZQ = r'{'
+    t_LLADER = r'}'
+    t_COMDOB = r'\"'
+ 
 
     def t_INCLUDE(self,t):
         r'include'
@@ -59,11 +60,11 @@ class Compilador(object):
         r'endl'
         return t
 
-    def t_ELSE(self,t):
+    def t_SINO(self,t):
         r'else'
         return t
 
-    def t_IF(self,t):
+    def t_SI(self,t):
         r'if'
         return t
 
@@ -75,31 +76,31 @@ class Compilador(object):
         r'void'
         return t
 
-    def t_WHILE(self,t):
+    def t_MIENTRAS(self,t):
         r'while'
         return t
 
-    def t_FOR(self,t):
+    def t_PARA(self,t):
         r'for'
         return t
 
-    def t_NUMBER_int(self,t):
+    def t_ENTERO(self,t):
         r'\d+'
         t.value = int(t.value)
         return t
 
 #exprecion regular para reconocer los identificadores
 
-    def t_ID(self,t):
+    def t_IDENTIFICADOR(self,t):
         r'\w+(_\d\w)*'
         return t
 
-    def t_STRING(self,t):
+    def t_CADENA(self,t):
     #expresion RE para reconocer los String
         r'\"?(\w+ \ *\w*\d* \ *)\"?'
         return t
 
-    def t_HASH(self,t):
+    def t_NUMERAL(self,t):
         r'\#'
         return t
 
@@ -107,15 +108,15 @@ class Compilador(object):
         r'\+\+'
         return t
 
-    def t_LESSEQUAL(self,t):
+    def t_MENORIGUAL(self,t):
         r'<='
         return t
 
-    def t_GREATEREQUAL(self,t):
+    def t_MAYORIGUAL(self,t):
         r'>='
         return t
 
-    def t_DEQUAL(self,t):
+    def t_IGUAL(self,t):
         r'=='
         return t
 
@@ -127,7 +128,7 @@ class Compilador(object):
         r'>>'
         return t
 
-    def t_DISTINT(self,t):
+    def t_DISTINTO(self,t):
         r'!='
         return t
 
@@ -145,9 +146,11 @@ class Compilador(object):
         r'//(.)*?\n'
         t.lexer.lineno += 1
 
+############################################################################################
+
     def t_error(self,t):
-    	print(" No es valido el caracter '%s'"%t.value[0])
-    	t.lexer.skip(1)
+        print(" No es valido el caracter '%s'"%t.value[0])
+        t.lexer.skip(1)
 
     #Constructor del analizar lexico
     def build(self,**kwargs):
@@ -165,4 +168,6 @@ class Compilador(object):
 if __name__ == '__main__':
     m = Compilador()
     m.build()
-    m.prueba("3 + 10  %    8")
+    while True:
+        a = input("Ingresa datos: ")
+        m.prueba(a)
