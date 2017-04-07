@@ -4,22 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/../QI2017-tareas/tarea-3/app.py" line="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e24bcde-6b1d-4106-9178-507326fd651a" name="Default" comment="Re estrcuturado terminando">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vista/delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parser.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parsetab.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vista/home.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vista/home.ui" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vista/main.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vista/prueba" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Analisis-lexico-sintactico-Python.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/analizador_lexico.py" afterPath="$PROJECT_DIR$/analizador_lexico.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/analizador_sintactico.py" afterPath="$PROJECT_DIR$/analizador_sintactico.py" />
+    <list default="true" id="8e24bcde-6b1d-4106-9178-507326fd651a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <manually-removed-from-ignored>
       <directory path=".idea/" />
@@ -37,11 +23,41 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="analizador_sintactico.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gramatica.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pruebas/gramatica.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prueba.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pruebas/prueba.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2">
+              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analizador_sintactico.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analizador_sintactico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="18">
+              <caret line="162" column="20" lean-forward="false" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="20" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -49,15 +65,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-180">
+              <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="analizador_lexico.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analizador_lexico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="3798">
+              <caret line="211" column="4" lean-forward="false" selection-start-line="211" selection-start-column="4" selection-end-line="211" selection-end-column="4" />
               <folding>
-                <marker date="1491534140938" expanded="true" signature="363:756" ph="..." />
-                <marker date="1491534140938" expanded="true" signature="1669:1698" ph="..." />
-                <marker date="1491534140938" expanded="true" signature="1875:1919" ph="..." />
+                <marker date="1491602511098" expanded="true" signature="412:793" ph="..." />
+                <marker date="1491602511098" expanded="true" signature="1864:1908" ph="..." />
               </folding>
             </state>
           </provider>
@@ -75,10 +100,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>s</find>
       <find>t</find>
       <find>asi</find>
-      <find>PARIZQ</find>
       <find>expression</find>
       <find>venta_cant</find>
       <find>exprecion</find>
@@ -93,14 +116,27 @@
       <find>ENDL</find>
       <find>COMDOB</find>
       <find>INT</find>
+      <find>asignar</find>
+      <find>AND</find>
+      <find>SI</find>
+      <find>NOT</find>
       <find>expresiones</find>
+      <find>PARDER</find>
+      <find>PARIZQ</find>
+      <find>resultado</find>
+      <find>for</find>
+      <find>t_PARA</find>
+      <find>punto</find>
+      <find>&amp;&amp;</find>
+      <find>resultado_gramatica</find>
+      <find>!=</find>
     </findStrings>
     <replaceStrings>
       <replace>p</replace>
-      <replace>expresion</replace>
       <replace>venta</replace>
       <replace>IDENTIFICADOR</replace>
       <replace>MAYORIZQ</replace>
+      <replace>expresion</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -111,6 +147,9 @@
       <map>
         <entry key="$PROJECT_DIR$" value="aritmetica-logica" />
       </map>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
     </option>
   </component>
   <component name="IdeDocumentHistory">
@@ -150,19 +189,23 @@
         <option value="$PROJECT_DIR$/Logica/logica.py" />
         <option value="$PROJECT_DIR$/Logica/expresiones.py" />
         <option value="$PROJECT_DIR$/analizador-sintactico.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/analizador-lexico.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/vista/homa.py" />
-        <option value="$PROJECT_DIR$/vista/home.py" />
         <option value="$PROJECT_DIR$/prueba" />
-        <option value="$PROJECT_DIR$/vista/main.py" />
         <option value="$PROJECT_DIR$/home.py" />
         <option value="$PROJECT_DIR$/../QI2017-tareas/tarea 2/numeor_par_impar.py" />
         <option value="$PROJECT_DIR$/../QI2017-tareas/tarea-3/Comision.csv" />
         <option value="$PROJECT_DIR$/../QI2017-tareas/tarea-3/app.py" />
+        <option value="$PROJECT_DIR$/vista/home.py" />
+        <option value="$PROJECT_DIR$/parselog.txt" />
+        <option value="$PROJECT_DIR$/vista/gramatica" />
+        <option value="$PROJECT_DIR$/vista/gramatica.txt" />
         <option value="$PROJECT_DIR$/analizador_lexico.py" />
         <option value="$PROJECT_DIR$/analizador_sintactico.py" />
+        <option value="$PROJECT_DIR$/vista/main.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -189,6 +232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -198,6 +242,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Analisis-lexico-sintactico-Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Analisis-lexico-sintactico-Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Analisis-lexico-sintactico-Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vista" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Analisis-lexico-sintactico-Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Analisis-lexico-sintactico-Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pruebas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -217,7 +289,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,11 +304,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pruebas" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/vista" />
       <recent name="$PROJECT_DIR$/../QI2017-tareas/tarea-3" />
       <recent name="$PROJECT_DIR$/../QI2017-tareas/tarea 2" />
-      <recent name="$PROJECT_DIR$/../QI2017-tareas/tarea 1" />
-      <recent name="$PROJECT_DIR$/simple" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -252,7 +323,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sintasis">
+  <component name="RunManager" selected="Python.main">
     <configuration default="false" name="sintasis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -283,7 +354,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Analisis-lexico-sintactico-Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vista/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -429,9 +500,9 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.sintasis" />
-        <item index="1" class="java.lang.String" itemvalue="Python.analizador_lexico" />
-        <item index="2" class="java.lang.String" itemvalue="Python.main" />
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.sintasis" />
+        <item index="2" class="java.lang.String" itemvalue="Python.analizador_lexico" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in numeor_par_impar.py" />
       </list>
     </recent_temporary>
@@ -490,7 +561,21 @@
       <option name="project" value="LOCAL" />
       <updated>1491459672702</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ui con pyqt">
+      <created>1491534670696</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1491534670696</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Listo vista y analizadores">
+      <created>1491605537245</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1491605537245</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -527,15 +612,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1366" height="736" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23141123" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2572079" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73421925" sideWeight="0.50758725" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3654485" sideWeight="0.4969651" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41694352" sideWeight="0.4969651" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73421925" sideWeight="0.49241275" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6694352" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.320598" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34551495" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34551495" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3488372" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -574,29 +660,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Analisis sintactico aritmetica" />
     <MESSAGE value="Re estrcuturado terminando" />
-    <option name="LAST_COMMIT_MESSAGE" value="Re estrcuturado terminando" />
+    <MESSAGE value="ui con pyqt" />
+    <MESSAGE value="Listo vista y analizadores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Listo vista y analizadores" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/analizador_sintactico.py</url>
-          <line>120</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Aritmetica/parsetab.py" />
-    <entry file="file://$PROJECT_DIR$/Aritmetica/parser.out" />
-    <entry file="file://$PROJECT_DIR$/Aritmetica/arit/py.py" />
-    <entry file="file://$PROJECT_DIR$/../probando/main.py" />
-    <entry file="file://$PROJECT_DIR$/../probando/token_Roles.py" />
-    <entry file="file://$PROJECT_DIR$/../QI2017-tareas/_build/html/index.html" />
-    <entry file="file://$PROJECT_DIR$/../QI2017-tareas/index.rst" />
     <entry file="file://$PROJECT_DIR$/../QI2017-tareas/conf.py" />
     <entry file="file://$PROJECT_DIR$/../QI2017-tareas/_build/html/_static/jquery.js" />
     <entry file="file://$PROJECT_DIR$/../QI2017-tareas/_build/html/_sources/index.rst.txt" />
@@ -633,9 +707,8 @@
         <state relative-caret-position="227">
           <caret line="85" column="26" lean-forward="false" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
           <folding>
-            <marker date="1491534140938" expanded="true" signature="363:756" ph="..." />
-            <marker date="1491534140938" expanded="true" signature="1669:1698" ph="..." />
-            <marker date="1491534140938" expanded="true" signature="1875:1919" ph="..." />
+            <marker date="1491602511098" expanded="true" signature="412:793" ph="..." />
+            <marker date="1491602511098" expanded="true" signature="1864:1908" ph="..." />
           </folding>
         </state>
       </provider>
@@ -650,14 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../QT/RecipesPyQt/view/home.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -665,27 +730,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vista/home.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="79" column="28" lean-forward="false" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vista/prueba">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../QT/RecipesPyQt/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="55" column="34" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,18 +745,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3.5/site-packages/ply/yacc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6006">
-          <caret line="3316" column="0" lean-forward="false" selection-start-line="3316" selection-start-column="0" selection-end-line="3316" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../QI2017-tareas/tarea 1/python_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
           <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,7 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,7 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -772,39 +806,114 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vista/home.ui">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2324">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vista/main.py">
+    <entry file="file:///usr/lib/python3.5/site-packages/ply/yacc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-649">
-          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        <state relative-caret-position="111">
+          <caret line="330" column="0" lean-forward="false" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vista/home.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parselog.txt" />
+    <entry file="file://$PROJECT_DIR$/analizador_lexico.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3798">
+          <caret line="211" column="4" lean-forward="false" selection-start-line="211" selection-start-column="4" selection-end-line="211" selection-end-column="4" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1491602511098" expanded="true" signature="412:793" ph="..." />
+            <marker date="1491602511098" expanded="true" signature="1864:1908" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analizador_lexico.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <marker date="1491534140938" expanded="true" signature="363:756" ph="..." />
-            <marker date="1491534140938" expanded="true" signature="1669:1698" ph="..." />
-            <marker date="1491534140938" expanded="true" signature="1875:1919" ph="..." />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/vista/captura.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vista/captura.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vista/imagen.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="108">
+            <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/analizador_sintactico.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="18">
+          <caret line="162" column="20" lean-forward="false" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="20" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pruebas/gramatica.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pruebas/prueba.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

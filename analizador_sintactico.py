@@ -1,31 +1,17 @@
 import ply.yacc as yacc
 from analizador_lexico import tokens
+from analizador_lexico import analizador
+
+# resultado del analisis
+resultado_gramatica = []
 
 precedence = (
-    ('left', 'ASIGNAR', 'SUMA', 'RESTA'),
+    ('right','ASIGNAR'),
+    ('left', 'SUMA', 'RESTA'),
     ('left', 'MULT', 'DIV'),
     ('right', 'UMINUS'),
 )
 nombres = {}
-
-def p_declaracion_librerias(t):
-    'expresion : NUMERAL INCLUDE MENORQUE expresion MAYORQUE'
-    print("Libreria")
-    nombres [t[4]] = 'liberia'
-
-def p_declaracion_encabezado(t):
-    'declaracion : USING NAMESPACE expresion PUNTOCOMA'
-    print("Encabezado = "+t[3])
-
-def p_declaracion_imprimir(t):
-    'expresion : COUT MAYORIZQ expresion PUNTOCOMA'
-    t[0] = t[3]
-    print("imprimiendo = "+str(t[3]))
-
-def p_declaracion_asigna(t):
-    'declaracion : CIN MAYORDER expresion PUNTOCOMA'
-    t[0] = t[3]
-    print("asigna cin = "+t[3])
 
 def p_declaracion_asignar(t):
     'declaracion : IDENTIFICADOR ASIGNAR expresion PUNTOCOMA'
@@ -33,7 +19,8 @@ def p_declaracion_asignar(t):
 
 def p_declaracion_expr(t):
     'declaracion : expresion'
-    print("Resultado: " + str(t[1]))
+    # print("Resultado: " + str(t[1]))
+    t[0] = t[1]
 
 def p_expresion_operaciones(t):
     '''
@@ -73,6 +60,67 @@ def p_expresion_grupo(t):
                 | CORIZQ expresion CORDER
     '''
     t[0] = t[2]
+# sintactico de expresiones logicas
+def p_expresion_logicas(t):
+    '''
+    expresion   :  expresion MENORQUE expresion 
+                |  expresion MAYORQUE expresion 
+                |  expresion MENORIGUAL expresion 
+                |   expresion MAYORIGUAL expresion 
+                |   expresion IGUAL expresion 
+                |   expresion DISTINTO expresion
+                |  PARIZQ expresion PARDER MENORQUE PARIZQ expresion PARDER
+                |  PARIZQ expresion PARDER MAYORQUE PARIZQ expresion PARDER
+                |  PARIZQ expresion PARDER MENORIGUAL PARIZQ expresion PARDER 
+                |  PARIZQ  expresion PARDER MAYORIGUAL PARIZQ expresion PARDER
+                |  PARIZQ  expresion PARDER IGUAL PARIZQ expresion PARDER
+                |  PARIZQ  expresion PARDER DISTINTO PARIZQ expresion PARDER
+    '''
+    if t[2] == "<": t[0] = t[1] < t[3]
+    elif t[2] == ">": t[0] = t[1] > t[3]
+    elif t[2] == "<=": t[0] = t[1] <= t[3]
+    elif t[2] == ">=": t[0] = t[1] >= t[3]
+    elif t[2] == "==": t[0] = t[1] is t[3]
+    elif t[2] == "!=": t[0] = t[1] != t[3]
+    elif t[3] == "<":
+        t[0] = t[2] < t[4]
+    elif t[2] == ">":
+        t[0] = t[2] > t[4]
+    elif t[3] == "<=":
+        t[0] = t[2] <= t[4]
+    elif t[3] == ">=":
+        t[0] = t[2] >= t[4]
+    elif t[3] == "==":
+        t[0] = t[2] is t[4]
+    elif t[3] == "!=":
+        t[0] = t[2] != t[4]
+
+    # print('logica ',[x for x in t])
+
+# gramatica de expresiones booleanadas
+def p_expresion_booleana(t):
+    '''
+    expresion   :   expresion AND expresion 
+                |   expresion OR expresion 
+                |   expresion NOT expresion 
+                |  PARIZQ expresion AND expresion PARDER
+                |  PARIZQ expresion OR expresion PARDER
+                |  PARIZQ expresion NOT expresion PARDER
+    '''
+    if t[2] == "&&":
+        t[0] = t[1] and t[3]
+    elif t[2] == "||":
+        t[0] = t[1] or t[3]
+    elif t[2] == "!":
+        t[0] =  t[1] is not t[3]
+    elif t[3] == "&&":
+        t[0] = t[2] and t[4]
+    elif t[3] == "||":
+        t[0] = t[2] or t[4]
+    elif t[3] == "!":
+        t[0] =  t[2] is not t[4]
+
+
 
 def p_expresion_numero(t):
     'expresion : ENTERO'
@@ -90,38 +138,44 @@ def p_expresion_nombre(t):
         print("Nombre desconocido ", t[1])
         t[0] = 0
 
-
-
-# sintactico de expresiones logicas
-# def p_expresiones_logicas(t):
-#     '''
-#     expresiones : PARIZQ expresiones AND expresiones  PARDER
-#                 | PARIZQ expresiones OR expresiones PARDER
-#                 | PARIZQ expresiones NOT expresiones PARDER
-#                 | PARIZQ expresiones MENORQUE expresiones PARDER
-#                 | PARIZQ expresiones MAYORQUE expresiones PARDER
-#                 | PARIZQ expresiones MENORIGUAL expresiones PARDER
-#                 | PARIZQ expresiones MAYORIGUAL expresiones PARDER
-#                 | PARIZQ expresiones IGUAL expresiones PARDER
-#                 | PARIZQ expresiones DISTINTO expresiones PARDER
-#     '''
-#     # if t[2] == "AND":
-
 def p_error(t):
+    global resultado_gramatica
     if t:
-        print("Error de sintactico de tipo: ",t.type," en el valor ", t.value)
+        resultado = "Error sintactico de tipo {} en el valor {}".format( str(t.type),str(t.value))
+        print(resultado)
     else:
-        print("Error desconocido",t)
+        resultado = "Error sintactico {}".format(t)
+        print(resultado)
+    resultado_gramatica.append(resultado)
+
 
 
 # instanciamos el analizador sistactico
-parse = yacc.yacc()
+parser = yacc.yacc()
+
+def prueba_sintactica(data):
+    global resultado_gramatica
+    resultado_gramatica.clear()
+
+    for item in data.splitlines():
+        if item:
+            gram = parser.parse(item)
+            if gram:
+                resultado_gramatica.append(str(gram))
+        else: print("data vacia")
+
+    print("result: ", resultado_gramatica)
+    return resultado_gramatica
 
 if __name__ == '__main__':
     while True:
         try:
-            s =  input("Expresion analizar: ")
-        except EOFError                                                                                                                                                                                                            :
-            break
-        parse.parse(s)
-        print()
+            s = input(' ingresa dato >>> ')
+        except EOFError:
+            continue
+        if not s: continue
+
+        # gram = parser.parse(s)
+        # print("Resultado ", gram)
+
+        prueba_sintactica(s)
