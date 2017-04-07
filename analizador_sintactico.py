@@ -8,8 +8,27 @@ precedence = (
 )
 nombres = {}
 
+def p_declaracion_librerias(t):
+    'expresion : NUMERAL INCLUDE MENORQUE expresion MAYORQUE'
+    print("Libreria")
+    nombres [t[4]] = 'liberia'
+
+def p_declaracion_encabezado(t):
+    'declaracion : USING NAMESPACE expresion PUNTOCOMA'
+    print("Encabezado = "+t[3])
+
+def p_declaracion_imprimir(t):
+    'expresion : COUT MAYORIZQ expresion PUNTOCOMA'
+    t[0] = t[3]
+    print("imprimiendo = "+str(t[3]))
+
+def p_declaracion_asigna(t):
+    'declaracion : CIN MAYORDER expresion PUNTOCOMA'
+    t[0] = t[3]
+    print("asigna cin = "+t[3])
+
 def p_declaracion_asignar(t):
-    'declaracion : NOMBRE ASIGNAR expresion'
+    'declaracion : IDENTIFICADOR ASIGNAR expresion PUNTOCOMA'
     nombres[t[1]] = t[3]
 
 def p_declaracion_expr(t):
@@ -56,45 +75,47 @@ def p_expresion_grupo(t):
     t[0] = t[2]
 
 def p_expresion_numero(t):
-    'expresion : NUMERO'
+    'expresion : ENTERO'
     t[0] = t[1]
 
+def p_expresion_cadena(t):
+    'expresion : COMDOB expresion COMDOB'
+    t[0] = t[2]
+
 def p_expresion_nombre(t):
-    'expresion : NOMBRE'
+    'expresion : IDENTIFICADOR'
     try:
         t[0] = nombres[t[1]]
     except LookupError:
-        print("Nombre desconocido %s " % t[1])
+        print("Nombre desconocido ", t[1])
         t[0] = 0
 
+
+
 # sintactico de expresiones logicas
-def p_expresiones_logicas(t):
-    '''
-    expresiones : PARIZQ expresiones AND expresiones  PARDER
-                | PARIZQ expresiones OR expresiones PARDER
-                | PARIZQ expresiones NOT expresiones PARDER
-                | PARIZQ expresiones MENORQUE expresiones PARDER
-                | PARIZQ expresiones MAYORQUE expresiones PARDER
-                | PARIZQ expresiones MENORIGUAL expresiones PARDER
-                | PARIZQ expresiones MAYORIGUAL expresiones PARDER
-                | PARIZQ expresiones IGUAL expresiones PARDER
-                | PARIZQ expresiones DISTINTO expresiones PARDER
-    '''
-    # if t[2] == "AND":
+# def p_expresiones_logicas(t):
+#     '''
+#     expresiones : PARIZQ expresiones AND expresiones  PARDER
+#                 | PARIZQ expresiones OR expresiones PARDER
+#                 | PARIZQ expresiones NOT expresiones PARDER
+#                 | PARIZQ expresiones MENORQUE expresiones PARDER
+#                 | PARIZQ expresiones MAYORQUE expresiones PARDER
+#                 | PARIZQ expresiones MENORIGUAL expresiones PARDER
+#                 | PARIZQ expresiones MAYORIGUAL expresiones PARDER
+#                 | PARIZQ expresiones IGUAL expresiones PARDER
+#                 | PARIZQ expresiones DISTINTO expresiones PARDER
+#     '''
+#     # if t[2] == "AND":
 
 def p_error(t):
-    '''
-    Manejo de errores del analisis sintactico
-    :param t: expresion analizar
-    :return: 
-    '''
     if t:
         print("Error de sintactico de tipo: ",t.type," en el valor ", t.value)
     else:
         print("Error desconocido",t)
 
+
 # instanciamos el analizador sistactico
-parse =  yacc.yacc()
+parse = yacc.yacc()
 
 if __name__ == '__main__':
     while True:
