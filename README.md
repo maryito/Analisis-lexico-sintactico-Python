@@ -3,4 +3,4 @@ Analizador de léxico y sintáctico usando PLY ( Implementación de herramienta 
 
 ![Captura](vista/captura.png)
 
-Desarrollando en el curso de compiladores QI2016
+Desarrollando en el curso de compiladores QI2017
